@@ -698,11 +698,6 @@ function initializeChatbot(config) {
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
             </div>
-            
-            <div id="pocketflow-chat-messages">
-                <div class="pocketflow-context-banner" id="pocketflow-chat-context-banner">
-                    <strong><a href="https://github.com/The-Pocket/PocketFlow-Tutorial-Website-Chatbot" target="_blank" style="color: var(--chatbot-primary); text-decoration: none;">This chatbot is open source</a></strong>
-                </div>
                 
                 <div class="pocketflow-message-container">
                     <div class="pocketflow-message bot">
@@ -1134,7 +1129,6 @@ function initializeChatbot(config) {
 
         function clearChatHistory() {
             // Keep only the context banner and welcome message
-            const contextBanner = document.getElementById('pocketflow-chat-context-banner');
             const welcomeMessageContainer = document.querySelector('.pocketflow-message-container');
             
             chatMessages.innerHTML = '';
